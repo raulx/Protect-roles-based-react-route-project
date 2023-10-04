@@ -1,0 +1,8 @@
+{
+  "users": [
+    { "id": 1, "name": "Joshua", "roles": [504] },
+    { "id": 2, "name": "Sarah", "roles": [504, 201, 303] },
+    { "id": 3, "name": "Mike", "roles": [504, 201] },
+    { "id": 4, "name": "Jacob", "roles": [504, 303] }
+  ]
+}
