@@ -7,11 +7,11 @@ import { useState } from "react";
 function Navbar() {
   const { reset } = UserContext();
   const [phoneNav, setPhoneNav] = useState(false);
-  const isLoggedIn = localStorage.getItem("user");
+  const isLoggedIn = localStorage.getItem("pr");
   const auth = JSON.parse(isLoggedIn);
   const navigate = useNavigate();
   const handleLogout = () => {
-    localStorage.removeItem("user");
+    localStorage.removeItem("pr");
     reset();
     navigate("/");
   };

@@ -19,7 +19,7 @@ function LoginPage() {
           const userData = response;
           // console.log(userData);
           localStorage.setItem(
-            "user",
+            "pr",
             JSON.stringify({
               auth: true,
               userData: userData.data,

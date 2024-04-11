@@ -1,5 +1,5 @@
 function HomePage() {
-  const user = JSON.parse(localStorage.getItem("user"));
+  const user = JSON.parse(localStorage.getItem("pr"));
   return (
     <div>
       <h1 className="text-3xl font-bold flex p-10 flex-col">

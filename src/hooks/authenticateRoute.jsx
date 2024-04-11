@@ -3,7 +3,7 @@ import { Navigate, useLocation, Outlet } from "react-router-dom";
 
 export function ProtectedRoute({ allowedRoles }) {
   const location = useLocation();
-  const userLoggedIn = JSON.parse(localStorage.getItem("user"));
+  const userLoggedIn = JSON.parse(localStorage.getItem("pr"));
   const isRoles = userLoggedIn?.roles?.find((r) => {
     return allowedRoles.includes(r);
   });
@@ -15,7 +15,7 @@ export function ProtectedRoute({ allowedRoles }) {
       to={"/unauthorized"}
       state={{
         from: location,
-        message: "You need to login First to access this page.",
+        message: "You are unauthorized to access this page",
       }}
       replace
     />

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 function HomeContent() {
-  const isUserLogged = localStorage.getItem("user");
+  const isUserLogged = localStorage.getItem("pr");
   const auth = JSON.parse(isUserLogged);
   let content;
   if (isUserLogged) {
